@@ -7,27 +7,59 @@ body {
   color: rgb(71, 2, 2);
   padding: 0px;
   display: flex;
+  justify-content: center;
 }
 .pictures-container {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .firstpic {
   width: 600px;
   height: 400px;
-  position: relative;
-  left: 650px;
 }
 .secondpic {
   width: 500px;
   height: 400px;
-  position: relative;
-  top: 200px;
-  right: 500px;
+  cursor: pointer;
 }
 .thirdpic {
   width: 500px;
   height: 500px;
-  position: relative;
-  top: 200px;
-  left: 200px;
+  cursor: pointer;
+}
+.forButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+/* .containerPeople {
+  display: grid;
+  justify-content: flex-start;
+  align-items: flex-end;
+} */
+.peopleTable {
+  border: 3px solid green;
+}
+th,
+td {
+  min-width: 100px;
+}
+
+th {
+  border: 3px solid ghostwhite;
+}
+/* .containerShip {
+  display: grid;
+  justify-content: flex-end;
+} */
+.shipsTable {
+  border: 3px solid blue;
+}
+td {
+  border: 3px solid lawngreen;
+}
+
+.tables-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
